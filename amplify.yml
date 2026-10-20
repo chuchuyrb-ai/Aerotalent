@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+        - echo "SES_API_EMAIL=$SES_API_EMAIL" >> .env
+        - echo "TENANT_ID=$TENANT_ID" >> .env
+        - echo "API_KEY=$API_KEY" >> .env
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist/aerotalent/browser
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+rewrites:
+  - source: '</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json)$)([^.]+$)/>'
+    target: '/index.html'
+    status: '200'

@@ -1,0 +1,14 @@
+Copyright (c) 2025 HMtechnologies Inc.
+All rights reserved.
+
+This software is proprietary and may not be copied, modified, distributed, or used in any form without the prior written authorization of HMtechnologies Inc. Unauthorized use, reproduction, or distribution of this software, in whole or in part, is strictly prohibited and may result in civil and criminal penalties.
+
+---
+
+Third-Party Components:
+This project includes development kits provided by Creative Tim. These components are licensed separately under their respective terms and conditions.
+
+Creative Tim License Information:
+License ID: EE7E-8101-6C60-4D99
+For full terms, please refer to the original Creative Tim license documentation included with the kits or available at:
+https://www.creative-tim.com/license
